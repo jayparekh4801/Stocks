@@ -1,0 +1,23 @@
+<div class="container">
+  <h3>{{symbol}}</h3>
+  <table class="table table-dark table-striped table-bordered table-sm row-border hover">
+    <thead>
+      <tr>
+        <th>Open</th>
+        <th>High</th>
+        <th>Low</th>
+        <th>Close</th>
+        <th>Volume</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let companyStock of companyStocks">
+        <td>{{companyStock.open}}</td>
+        <td>{{companyStock.high}}</td>
+        <td>{{companyStock.low}}</td>
+        <td>{{companyStock.close}}</td>
+        <td>{{companyStock.volume}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
